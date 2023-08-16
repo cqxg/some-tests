@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 import { LETTERS_URL, MAX_LETTERS, POLLING_TIMEOUT } from "../utils/constants";
 
-const useFetchLetters = (index: number, checked: boolean) => {
+const useFetchLetters = (index: number, checked: boolean): string[] => {
   const [letters, setLetters] = useState<string[]>([]);
 
   useEffect(() => {
