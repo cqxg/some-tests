@@ -1,23 +1,44 @@
 {
-  "name": "love-triangle",
-  "version": "1.0.0",
-  "description": "Love triangle",
-  "main": "src/index.js",
+  "name": "giga-test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "axios": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.0.7",
+    "typescript": "^4.4.2"
+  },
   "scripts": {
-    "test": "mocha test.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yankouskia/love-triangle.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "author": "Aliaksandr Yankouski <aleksandr.yankovskiy@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yankouskia/love-triangle/issues"
-  },
-  "homepage": "https://github.com/yankouskia/love-triangle#readme",
-  "devDependencies": {
-    "mocha": "^5.0.1"
-  },
-  "dependencies": {}
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
